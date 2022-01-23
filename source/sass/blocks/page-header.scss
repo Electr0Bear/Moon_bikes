@@ -8,4 +8,64 @@
 
 .page-header__wrapper {
   padding: 318px 280px 240px 280px;
+  display: grid;
+  grid-template-columns: 393px 1fr 326px;
+}
+
+.page-header__logo {
+  margin-bottom: 30px;
+}
+
+.page-header__about h2 {
+  margin: 0 0 24px 0;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: -0.005em;
+  color: $white;
+}
+
+.page-header__about p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  color: $whiteOpacue08;
+}
+
+.page-header__form {
+  grid-column: 3 / 4;
+}
+
+.page-header__form h3 {
+  margin: 0 0 20px 0;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: $white;
+}
+
+.page-header__form-input {
+  margin-bottom: 20px;
+  padding-left: 30px;
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid $grey2;
+  border-radius: 6px;
+  outline: none;
+}
+
+.page-header__form-button {
+  width: 100%;
+  min-height: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  background-color: $teal;
+  border: none;
+  border-radius: 6px;
+  outline: none;
 }

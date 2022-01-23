@@ -4,8 +4,22 @@
   background-color: transparent;
 }
 
+.header__nav {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: $whiteOpacue02;
+  }
+}
+
 .header__nav-list {
-  padding-bottom: 9px;
+  padding: 0 19px 9px 19px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
