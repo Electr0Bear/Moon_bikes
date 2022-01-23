@@ -1,0 +1,29 @@
+.map {
+  padding: 150px 0 10px 0;
+}
+
+.map__heading {
+  margin: 0 auto 30px auto;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  text-align: center;
+  color: $dark2;
+}
+
+.map__address {
+  margin: 0 auto 42px auto;
+  display: block;
+  width: 555px;
+  font-size: 17px;
+  line-height: 31px;
+  text-align: center;
+  color: $blackOpacue07;
+}
+
+.map__picture {
+  margin: 0 auto;
+  display: block;
+  width: min-content;
+}

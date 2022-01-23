@@ -115,7 +115,12 @@
     <section class="main__map map">
       <h2 class="map__heading">Как нас найти?</h2>
       <span class="map__address">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</span>
-      <img src="" alt="Наш офис на карте" width="957" height="530">
+      <picture class="map__picture">
+        <source media="(max-width: 767px)" srcset="img/map-mobile@1x.png 1x, img/map-mobile@2x.png 2x">
+        <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
+        <img src="img/map@1x.png" srcset="img/map@2x.png 2x" alt="Наш офис на карте" width="957" height="530">
+      </picture>
+
     </section>
 
   </main>
