@@ -1,0 +1,43 @@
+.about-us {
+  padding: 150px 137px 148px 137px;
+}
+
+.about-us h2 {
+  margin: 0 0 50px 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: $dark;
+  text-align: center;
+}
+
+.about-us__feature-list {
+  display: flex;
+  justify-content: space-between;
+  counter-reset: myCounter;
+}
+
+.about-us__feature-item {
+  padding-top: 50px;
+  position: relative;
+  counter-increment: myCounter;
+  width: 263px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: -0.5px;
+
+  &::before {
+    content: "0" counter(myCounter);
+    position: absolute;
+    top: 0;
+    left: calc(50% - 15px);
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -1.27273px;
+    color: $teal;
+  }
+}
