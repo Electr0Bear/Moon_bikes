@@ -1,0 +1,66 @@
+.bike-video {
+  padding-top: 120px;
+  min-height: 804px;
+  background: linear-gradient(to bottom, $dark2 88%, $white 88%);
+}
+
+.bike-video__heading {
+  margin: 0 0 20px 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  text-align: center;
+  color: $white;
+}
+
+.bike-video__text {
+  margin: 0 auto 56px auto;
+  width: 340px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: $whiteOpacue07;
+}
+
+.bike-video__video {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  width: min-content;
+}
+
+.bike-video__button {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 32px);
+  min-width: 65px;
+  min-height: 65px;
+  background-color: $teal;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    left: calc(50% - 2px);
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-bottom: 12px solid $dark3;
+    transform: rotate(90deg);
+  }
+
+  &:hover,
+  &:focus {
+    filter: grayscale(0.5);
+  }
+
+  &:active {
+    filter: grayscale(0.8);
+  }
+}
