@@ -1,19 +1,40 @@
 .page-header {
   background-color: $dark2;
   background-image: url("../img/background-bike@1x.png");
-  background-position: center;
+  background-position: center 0;
   background-size: 1440px 825px;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/background-bike@2x.png");
+  }
+
+  @media (max-width: $tabletMax) {
+    background-image: url("../../img/background-bike-tablet@1x.png");
+    background-size: 767px 340px;
+  }
 }
 
 .page-header__wrapper {
-  padding: 318px 280px 240px 280px;
+  padding: 318px 0 240px 0;
+  max-width: 880px;
   display: grid;
   grid-template-columns: 393px 1fr 326px;
+
+  @media (max-width: $tabletMax) {
+    padding: 0;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
 }
 
 .page-header__logo {
   margin-bottom: 30px;
+
+  @media (max-width: $tabletMax) {
+    margin: 25px 0 88px 21px;
+  }
 }
 
 .page-header__heading {
@@ -23,6 +44,14 @@
   line-height: 64px;
   letter-spacing: -0.005em;
   color: $white;
+
+  @media (max-width: $tabletMax) {
+    margin: 0 auto 20px auto;
+    width: 435px;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+  }
 }
 
 .page-header__text {
@@ -32,13 +61,37 @@
   line-height: 32px;
   letter-spacing: -0.005em;
   color: $whiteOpacue08;
+
+  @media (max-width: $tabletMax) {
+    margin: 0 auto 80px auto;
+    width: 435px;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+  }
+}
+
+.page-header__form-wrapper {
+  grid-column: 3 / 4;
+
+  @media (max-width: $tabletMax) {
+    padding: 70px 0;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: $white;
+  }
 }
 
 .page-header__form {
-  grid-column: 3 / 4;
+  @media (max-width: $tabletMax) {
+    margin: 0 auto;
+    width: 321px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
 }
 
-.page-header__form h3 {
+.page-header__form-heading {
   margin: 0 0 20px 0;
   font-weight: 600;
   font-size: 17px;
@@ -46,16 +99,35 @@
   text-align: center;
   letter-spacing: -0.005em;
   color: $white;
+
+  @media (max-width: $tabletMax) {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 28px;
+    color: $black;
+  }
 }
 
 .page-header__form-input {
   margin-bottom: 20px;
-  padding-left: 30px;
+  padding: 13px 30px;
   width: 100%;
   min-height: 48px;
+  font-size: 15px;
+  line-height: 24px;
   border: 1px solid $grey2;
   border-radius: 6px;
   outline: none;
+
+  &::placeholder {
+    color: $dark4;
+    opacity: 0.5;
+  }
+
+  @media (max-width: $tabletMax) {
+    margin-bottom: 30px;
+    padding: 12px 21px;
+  }
 }
 
 .page-header__form-button {
