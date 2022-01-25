@@ -1,5 +1,9 @@
 .map {
   padding: 150px 0 10px 0;
+
+  @media (max-width: $tabletMax) {
+    padding-top: 70px;
+  }
 }
 
 .map__heading {
@@ -10,20 +14,38 @@
   letter-spacing: -0.005em;
   text-align: center;
   color: $dark2;
+
+  @media (max-width: $tabletMax) {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
 }
 
 .map__address {
   margin: 0 auto 42px auto;
   display: block;
-  width: 555px;
+  max-width: 555px;
   font-size: 17px;
   line-height: 31px;
   text-align: center;
   color: $blackOpacue07;
+
+  @media (max-width: $tabletMax) {
+    margin-bottom: 20px;
+    max-width: 630px;
+  }
 }
 
 .map__picture {
   margin: 0 auto;
   display: block;
   width: min-content;
+
+  @media (max-width: $tabletMax) {
+
+    & img {
+      width: 698px;
+      height: 545px;
+    }
+  }
 }

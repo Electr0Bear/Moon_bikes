@@ -2,6 +2,11 @@
   padding-top: 120px;
   min-height: 804px;
   background: linear-gradient(to bottom, $dark2 88%, $white 88%);
+
+  @media (max-width: $tabletMax) {
+    padding-top: 70px;
+    min-height: 498px;
+  }
 }
 
 .bike-video__heading {
@@ -12,24 +17,40 @@
   letter-spacing: -0.005em;
   text-align: center;
   color: $white;
+
+  @media (max-width: $tabletMax) {
+    font-size: 24px;
+  }
 }
 
 .bike-video__text {
   margin: 0 auto 56px auto;
-  width: 340px;
+  max-width: 340px;
   font-weight: 300;
   font-size: 16px;
   line-height: 28px;
   text-align: center;
   letter-spacing: -0.005em;
   color: $whiteOpacue07;
+
+  @media (max-width: $tabletMax) {
+    margin-bottom: 40px;
+    max-width: 429px;
+  }
 }
 
-.bike-video__video {
+.bike-video__video-wrapper {
   margin: 0 auto;
   position: relative;
   display: block;
   width: min-content;
+}
+
+.bike-video__video img {
+  @media (max-width: $tabletMax) {
+    width: 503px;
+    height: 282px;
+  }
 }
 
 .bike-video__button {

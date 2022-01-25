@@ -24,7 +24,7 @@
   width: fit-content;
   counter-reset: myCounter;
 
-  @media (max-width: $tabletMax) {
+  @media (max-width: 1050px) {
     max-width: 532px;
   }
 }

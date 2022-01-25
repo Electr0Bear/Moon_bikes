@@ -2,6 +2,10 @@
   padding: 29px 440px 98px 440px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $tabletMax) {
+    padding: 10px 105px 52px 105px;
+  }
 }
 
 .footer__contact {
