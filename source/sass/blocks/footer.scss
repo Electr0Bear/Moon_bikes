@@ -2,9 +2,16 @@
   padding: 29px 440px 98px 440px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   @media (max-width: $tabletMax) {
     padding: 10px 105px 52px 105px;
+  }
+
+  @media (max-width: $mobileMax) {
+    padding: 21px 22px 28px 22px;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
@@ -12,4 +19,8 @@
   font-style: normal;
   line-height: 22px;
   color: $blackOpacue05;
+
+  @media (max-width: $mobileMax) {
+    margin-bottom: 22px;
+  }
 }

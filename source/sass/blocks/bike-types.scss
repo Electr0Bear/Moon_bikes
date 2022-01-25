@@ -9,6 +9,10 @@
   @media (max-width: $tabletMax) {
     padding: 50px 89px 70px 89px;
   }
+
+  @media (max-width: $tabletMax) {
+    padding: 50px 25px 2px 25px;
+  }
 }
 
 .bike-types__heading {
@@ -19,6 +23,11 @@
   letter-spacing: -0.005em;
   text-align: center;
   color: $dark;
+
+  @media (max-width: $tabletMax) {
+    font-size: 24px;
+    line-height: 41px;
+  }
 }
 
 .bike-types__list {
@@ -43,10 +52,16 @@
 
 .bike-types__item--01 {
   margin-right: 50px;
+  margin-bottom: 50px;
   padding-top: 10px;
 
   @media (max-width: $tabletMax) {
     padding: 0;
+  }
+
+  @media (max-width: $mobileMax) {
+    margin-right: 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -57,6 +72,10 @@
   @media (max-width: $tabletMax) {
     padding: 0;
   }
+
+  @media (max-width: $mobileMax) {
+    margin-bottom: 40px;
+  }
 }
 
 .bike-types__item--03 {
@@ -64,6 +83,10 @@
 
   @media (max-width: $tabletMax) {
     margin: 0;
+  }
+
+  @media (max-width: $mobileMax) {
+    margin-bottom: 40px;
   }
 }
 
@@ -77,7 +100,7 @@
     position: inherit;
   }
 
-  @media (max-width: 1050px) {
+  @media (max-width: $tabletMax) {
     & img {
       width: 270px;
       height: 300px;
@@ -106,6 +129,13 @@
       border: 18px solid $teal;
       top: 201px;
       left: -37px;
+    }
+  }
+
+  @media (max-width: $mobileMax) {
+    &::before {
+      top: 201px;
+      left: -28px;
     }
   }
 }
@@ -161,6 +191,12 @@
       border: 13px solid $teal;
       top: -20px;
       right: -25px;
+    }
+  }
+
+  @media (max-width: $mobileMax) {
+    &::before {
+      right: -15px;
     }
   }
 }

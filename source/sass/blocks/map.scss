@@ -19,6 +19,10 @@
     margin-bottom: 20px;
     font-size: 24px;
   }
+
+  @media (max-width: $mobileMax) {
+    font-size: 18px;
+  }
 }
 
 .map__address {
@@ -30,9 +34,21 @@
   text-align: center;
   color: $blackOpacue07;
 
+  & br {
+    display: none;
+  }
+
   @media (max-width: $tabletMax) {
     margin-bottom: 20px;
     max-width: 630px;
+  }
+
+  @media (max-width: $mobileMax) {
+    padding: 0 16px;
+
+    & br {
+      display: initial;
+    }
   }
 }
 
@@ -42,10 +58,16 @@
   width: min-content;
 
   @media (max-width: $tabletMax) {
-
     & img {
       width: 698px;
       height: 545px;
+    }
+  }
+
+  @media (max-width: $mobileMax) {
+    & img {
+      width: 320px;
+      height: 250px;
     }
   }
 }

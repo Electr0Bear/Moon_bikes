@@ -13,6 +13,21 @@
     background-image: url("../../img/background-bike-tablet@1x.png");
     background-size: 767px 340px;
   }
+
+  @media (max-width: $tabletMax) and (min-resolution: 144dpi),
+    (max-width: $tabletMax) and (min-resolution: 1.5dppx) {
+    background-image: url("../../img/background-bike-tablet@2x.png");
+  }
+
+  @media (max-width: $mobileMax) {
+    background-image: url("../../img/background-bike-mobile@1x.png");
+    background-size: 319px 390px;
+  }
+
+  @media (max-width: $mobileMax) and (min-resolution: 144dpi),
+    (max-width: $mobileMax) and (min-resolution: 1.5dppx) {
+    background-image: url("../../img/background-bike-mobile@2x.png");
+  }
 }
 
 .page-header__wrapper {
@@ -35,6 +50,10 @@
   @media (max-width: $tabletMax) {
     margin: 25px 0 88px 21px;
   }
+
+  @media (max-width: $mobileMax) {
+    margin: 25px 0 75px 16px;
+  }
 }
 
 .page-header__heading {
@@ -47,10 +66,14 @@
 
   @media (max-width: $tabletMax) {
     margin: 0 auto 20px auto;
-    width: 435px;
+    max-width: 435px;
     font-size: 30px;
     line-height: 42px;
     text-align: center;
+  }
+
+  @media (max-width: $mobileMax) {
+    max-width: 288px;
   }
 }
 
@@ -64,10 +87,15 @@
 
   @media (max-width: $tabletMax) {
     margin: 0 auto 80px auto;
-    width: 435px;
+    max-width: 435px;
     font-size: 18px;
     line-height: 32px;
     text-align: center;
+  }
+
+  @media (max-width: $mobileMax) {
+    margin-bottom: 70px;
+    max-width: 288px;
   }
 }
 
@@ -85,9 +113,15 @@
 .page-header__form {
   @media (max-width: $tabletMax) {
     margin: 0 auto;
-    width: 321px;
+    padding: 0 224px;
+    max-width: 826px;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+  }
+
+  @media (max-width: $mobileMax) {
+    padding: 0 16px;
+    max-width: 400px;
   }
 }
 
@@ -105,6 +139,10 @@
     font-size: 18px;
     line-height: 28px;
     color: $black;
+  }
+
+  @media (max-width: $mobileMax) {
+    margin-bottom: 20px;
   }
 }
 
@@ -127,6 +165,10 @@
   @media (max-width: $tabletMax) {
     margin-bottom: 30px;
     padding: 12px 21px;
+  }
+
+  @media (max-width: $mobileMax) {
+    margin-bottom: 20px;
   }
 }
 

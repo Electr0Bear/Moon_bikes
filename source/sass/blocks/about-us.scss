@@ -4,6 +4,10 @@
   @media (max-width: $tabletMax) {
     padding: 70px 0 27px 0;
   }
+
+  @media (max-width: $mobileMax) {
+    padding: 70px 16px 35px 16px;
+  }
 }
 
 .about-us__heading {
@@ -14,6 +18,11 @@
   letter-spacing: -0.005em;
   color: $dark;
   text-align: center;
+
+  @media (max-width: $mobileMax) {
+    font-size: 24px;
+    line-height: 41px;
+  }
 }
 
 .about-us__feature-list {
@@ -24,8 +33,12 @@
   width: fit-content;
   counter-reset: myCounter;
 
-  @media (max-width: 1050px) {
+  @media (max-width: $tabletMax) {
     max-width: 532px;
+  }
+
+  @media (max-width: $mobileMax) {
+    justify-content: center;
   }
 }
 
@@ -54,5 +67,12 @@
 
   @media (max-width: $tabletMax) {
     margin-bottom: 43px;
+  }
+
+  @media (max-width: $mobileMax) {
+    margin-bottom: 35px;
+    max-width: fit-content;
+    font-size: 18px;
+    line-height: 34px;
   }
 }
