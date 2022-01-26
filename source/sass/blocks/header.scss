@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  box-sizing: border-box;
   background-color: transparent;
 
   @media (max-width: $tabletMax) {

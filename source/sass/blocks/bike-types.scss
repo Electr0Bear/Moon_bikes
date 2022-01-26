@@ -1,4 +1,5 @@
 .bike-types {
+  box-sizing: border-box;
   background-color: $grey;
 }
 
@@ -15,7 +16,7 @@
   }
 }
 
-.bike-types__heading {
+.bike-types h2 {
   margin: 0 0 51px 0;
   font-weight: 600;
   font-size: 30px;
@@ -51,7 +52,7 @@
   width: min-content;
 }
 
-.bike-types__type-name {
+.bike-types__item span {
   display: block;
   font-weight: 600;
   font-size: 22px;

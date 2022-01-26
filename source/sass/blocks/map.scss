@@ -1,12 +1,13 @@
 .map {
   padding: 145px 0 10px 0;
+  box-sizing: border-box;
 
   @media (max-width: $tabletMax) {
     padding-top: 65px;
   }
 }
 
-.map__heading {
+.map h2{
   margin: 0 auto 30px auto;
   font-weight: 600;
   font-size: 30px;
@@ -25,7 +26,7 @@
   }
 }
 
-.map__address {
+.map span {
   margin: 0 auto 42px auto;
   display: block;
   max-width: 555px;

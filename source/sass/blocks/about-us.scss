@@ -1,5 +1,6 @@
 .about-us {
   padding: 150px 25px 148px 25px;
+  box-sizing: border-box;
 
   @media (max-width: $tabletMax) {
     padding: 72px 106px 27px 106px;
@@ -10,7 +11,7 @@
   }
 }
 
-.about-us__heading {
+.about-us h2 {
   margin: 0 0 52px 0;
   font-weight: 600;
   font-size: 30px;

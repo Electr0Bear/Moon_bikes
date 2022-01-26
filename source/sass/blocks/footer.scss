@@ -1,5 +1,6 @@
 .footer__address {
   padding: 24px 190px 98px 190px;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -26,8 +27,6 @@
 
   & svg {
     margin-right: 15px;
-    width: 26px;
-    height: 26px;
     fill: none;
   }
 

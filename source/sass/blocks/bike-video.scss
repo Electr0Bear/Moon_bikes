@@ -1,5 +1,6 @@
 .bike-video {
   padding-top: 120px;
+  box-sizing: border-box;
   background: linear-gradient(to bottom, $dark2 87%, $white 87%);
 
   @media (max-width: $tabletMax) {
@@ -13,7 +14,7 @@
   }
 }
 
-.bike-video__heading {
+.bike-video h2 {
   margin: 0 0 20px 0;
   font-weight: 600;
   font-size: 30px;
@@ -27,7 +28,7 @@
   }
 }
 
-.bike-video__text {
+.bike-video p {
   margin: 0 auto 56px auto;
   max-width: 340px;
   font-weight: 300;
