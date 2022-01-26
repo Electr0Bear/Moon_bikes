@@ -1,17 +1,17 @@
 'use strict';
 
-var nameInput = document.querySelector('.page-header__name-input');
-var phoneInput = document.querySelector('.page-header__phone-input');
-var form = document.querySelector('.page-header__form');
-var formSubmitBtn = document.querySelector('.page-header__form-button');
+const nameInput = document.querySelector('.page-header__name-input');
+const phoneInput = document.querySelector('.page-header__phone-input');
+const form = document.querySelector('.page-header__form');
+const formSubmitBtn = document.querySelector('.page-header__form-button');
 
-var setInputValidity = function (input) {
+const setInputValidity = input => {
   const checkValidity = input.checkValidity();
   input.classList.toggle('page-header__form-input--invalid', !checkValidity);
 }
 
-var checkNameInput = function () {
-  nameInput.addEventListener('input', function () {
+const checkNameInput = () => {
+  nameInput.addEventListener('input', () => {
     nameInput.setCustomValidity('');
     setInputValidity(nameInput);
     if (nameInput.value && !nameInput.checkValidity()) {
@@ -19,7 +19,7 @@ var checkNameInput = function () {
     }
   });
 
-  nameInput.addEventListener('focusout', function () {
+  nameInput.addEventListener('focusout', () => {
     nameInput.classList.remove('page-header__form-input--invalid');
     if (phoneInput.value.length !==0) {
       setInputValidity(phoneInput);
@@ -27,29 +27,31 @@ var checkNameInput = function () {
   })
 }
 
-var checkPhoneInput = function () {
-  phoneInput.addEventListener('focusin', function () {
+const checkPhoneInput = () => {
+  phoneInput.addEventListener('focusin', () => {
     if (!phoneInput.value) {
       phoneInput.value = "+7";
     }
   })
 
-  phoneInput.addEventListener('focusout', function () {
-    phoneInput.classList.remove('page-header__form-input--invalid');
-    if (phoneInput.value.length <= 2) {
-      phoneInput.value = "";
-    } else if (phoneInput.value.length !==0 && !phoneInput.checkValidity()) {
-      phoneInput.setCustomValidity('Введите 10 цифр номера телефона');
-      setInputValidity(phoneInput);
-    }
-  })
+  phoneInput.addEventListener('focusout', () => {
+    console.log(phoneInput.checkValidity());
 
-  phoneInput.addEventListener
+    // if (phoneInput.value.length <= 2) {
+    //   phoneInput.value = "";
+    // } else if (phoneInput.value.length !==0 && !phoneInput.checkValidity()) {
+    //   phoneInput.setCustomValidity('Введите 10 цифр номера телефона');
+    //   setInputValidity(phoneInput);
+    // }
+
+
+
+  })
 }
 
-var onFormSubmit = function () {
+const onFormSubmit = () => {
 
-  formSubmitBtn.addEventListener('click', function () {
+  formSubmitBtn.addEventListener('click', () => {
     setInputValidity(nameInput);
     setInputValidity(phoneInput);
   })

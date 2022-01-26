@@ -1,13 +1,13 @@
 'use strict';
 
-var header = document.querySelector('.header__nav');
-var headerBtn = document.querySelector('.header__nav-button')
+const header = document.querySelector('.header__nav');
+const headerBtn = document.querySelector('.header__nav-button')
 
-var onJsLoad = function () {
+const onJsLoad = () => {
   header.classList.remove('header__nav--js-inactive');
 }
 
-var navHandler = function () {
+const navHandler = () => {
   headerBtn.addEventListener('click', evt => {
     evt.preventDefault();
     const checkClass = header.classList.contains('header__nav--opened');
