@@ -18,11 +18,18 @@
 }
 
 .footer__contact {
-  display: block;
+  display: flex;
   width: fit-content;
   font-style: normal;
   line-height: 22px;
   color: $blackOpacue05;
+
+  & svg {
+    margin-right: 15px;
+    width: 26px;
+    height: 26px;
+    fill: none;
+  }
 
   @media (max-width: $mobileMax) {
     margin-bottom: 22px;
