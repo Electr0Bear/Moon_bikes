@@ -9,6 +9,7 @@
 
   @media (max-width: $mobileMax) {
     padding: 84px 16px 0 16px;
+    background: linear-gradient(to bottom, $dark2 88%, $white 88%);
   }
 }
 
@@ -42,7 +43,7 @@
   }
 
   @media (max-width: $mobileMax) {
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 }
 
@@ -98,14 +99,26 @@
   }
 
   @media (max-width: $tabletMax) {
-    width: 90px;
-    height: 90px;
     top: calc(50% - 47px);
     left: calc(50% - 45px);
+    min-width: 90px;
+    min-height: 90px;
 
     &::before {
       border: 12px solid transparent;
       border-bottom: 16px solid $dark3;
+    }
+  }
+
+  @media (max-width: $mobileMax) {
+    top: calc(50% - 35px);
+    left: calc(50% - 33px);
+    min-width: 65px;
+    min-height: 65px;
+
+    &::before {
+      border: 10px solid transparent;
+      border-bottom: 14px solid $dark3;
     }
   }
 }

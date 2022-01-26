@@ -52,7 +52,7 @@
   }
 
   @media (max-width: $mobileMax) {
-    margin: 25px 0 75px 16px;
+    margin: 25px 0 69px 18px;
   }
 }
 
@@ -153,6 +153,7 @@
   min-height: 48px;
   font-size: 15px;
   line-height: 24px;
+  letter-spacing: 0.02em;
   border: 1px solid $grey2;
   border-radius: 6px;
   outline: none;
@@ -163,12 +164,13 @@
   }
 
   @media (max-width: $tabletMax) {
-    margin-bottom: 18px;
-    padding: 12px 21px;
+    margin-bottom: 20px;
+    padding: 11px 21px 11px 21px;
   }
 
   @media (max-width: $mobileMax) {
     margin-bottom: 20px;
+    padding: 12px 21px 10px 21px;
   }
 }
 
