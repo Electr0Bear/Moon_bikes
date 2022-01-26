@@ -6,7 +6,7 @@
   max-width: 957px;
 
   @media (max-width: $tabletMax) {
-    padding: 10px 65px 52px 65px;
+    padding: 7px 65px 52px 65px;
     max-width: 698px;
   }
 
@@ -38,8 +38,16 @@
 
 .footer__contact-email {
   margin-left: 7px;
+
+  @media (max-width: $tabletMax) {
+    margin-left: 5px;
+  }
 }
 
 .footer__contact-phone {
   margin-right: 22px;
+
+  @media (max-width: $tabletMax) {
+    margin-right: 15px;
+  }
 }

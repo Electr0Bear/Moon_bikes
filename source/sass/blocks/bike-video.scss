@@ -1,16 +1,14 @@
 .bike-video {
   padding-top: 120px;
-  // min-height: 804px;
   background: linear-gradient(to bottom, $dark2 87%, $white 87%);
 
   @media (max-width: $tabletMax) {
     padding-top: 70px;
-    // min-height: 498px;
+    background: linear-gradient(to bottom, $dark2 82%, $white 82%);
   }
 
   @media (max-width: $mobileMax) {
     padding: 84px 16px 0 16px;
-    // min-height: 432px;
   }
 }
 
@@ -97,5 +95,17 @@
 
   &:active {
     filter: grayscale(0.8);
+  }
+
+  @media (max-width: $tabletMax) {
+    width: 90px;
+    height: 90px;
+    top: calc(50% - 47px);
+    left: calc(50% - 45px);
+
+    &::before {
+      border: 12px solid transparent;
+      border-bottom: 16px solid $dark3;
+    }
   }
 }
