@@ -1,5 +1,5 @@
 .footer__address {
-  padding: 29px 190px 98px 190px;
+  padding: 24px 190px 98px 190px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -34,4 +34,12 @@
   @media (max-width: $mobileMax) {
     margin-bottom: 22px;
   }
+}
+
+.footer__contact-email {
+  margin-left: 7px;
+}
+
+.footer__contact-phone {
+  margin-right: 22px;
 }

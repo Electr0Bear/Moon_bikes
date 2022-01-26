@@ -45,7 +45,7 @@
 }
 
 .page-header__logo {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   @media (max-width: $tabletMax) {
     margin: 25px 0 88px 21px;
@@ -126,7 +126,7 @@
 }
 
 .page-header__form-heading {
-  margin: 0 0 20px 0;
+  margin: 4px 0 20px 0;
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
@@ -148,7 +148,7 @@
 
 .page-header__form-input {
   margin-bottom: 20px;
-  padding: 13px 30px;
+  padding: 13px 30px 9px 30px;
   width: 100%;
   min-height: 48px;
   font-size: 15px;

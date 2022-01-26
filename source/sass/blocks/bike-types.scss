@@ -4,7 +4,7 @@
 
 .bike-types__wrapper {
   margin: 0 auto;
-  padding: 148px 75px;
+  padding: 155px 75px 100px 75px;
 
   @media (max-width: $tabletMax) {
     padding: 50px 89px 70px 89px;
@@ -98,7 +98,7 @@
 .bike-types__photo {
   display: block;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   border-radius: 10px;
 
   & img {
