@@ -4,13 +4,13 @@
 
 .bike-types__wrapper {
   margin: 0 auto;
-  padding: 148px 157px;
+  padding: 148px 75px;
 
   @media (max-width: $tabletMax) {
     padding: 50px 89px 70px 89px;
   }
 
-  @media (max-width: $tabletMax) {
+  @media (max-width: $mobileMax) {
     padding: 50px 25px 2px 25px;
   }
 }
@@ -34,6 +34,11 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  @media (max-width: $mobileMax) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .bike-types__item {
