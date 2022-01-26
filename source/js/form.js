@@ -1,8 +1,8 @@
 'use strict';
 
+const form = document.querySelector('.page-header__form');
 const nameInput = document.querySelector('.page-header__name-input');
 const phoneInput = document.querySelector('.page-header__phone-input');
-const form = document.querySelector('.page-header__form');
 const formSubmitBtn = document.querySelector('.page-header__form-button');
 
 const setInputValidity = input => {
