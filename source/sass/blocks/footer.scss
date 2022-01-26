@@ -1,21 +1,25 @@
 .footer__address {
-  padding: 29px 440px 98px 440px;
+  padding: 29px 190px 98px 190px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  max-width: 957px;
 
   @media (max-width: $tabletMax) {
-    padding: 10px 105px 52px 105px;
+    padding: 10px 65px 52px 65px;
+    max-width: 698px;
   }
 
   @media (max-width: $mobileMax) {
     padding: 21px 22px 28px 22px;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
 }
 
 .footer__contact {
+  display: block;
+  width: fit-content;
   font-style: normal;
   line-height: 22px;
   color: $blackOpacue05;
