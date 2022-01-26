@@ -44,9 +44,9 @@
           <form class="page-header__form">
             <h3 class="page-header__form-heading">Заполните поля ниже и мы подберем велосипед Вашей мечты</h3>
             <label class="visually-hidden" for="feedback-name">Ваше имя</label>
-            <input class="page-header__form-input" id="feedback-name" type="text" placeholder="Введите Ваше Имя">
+            <input class="page-header__form-input page-header__name-input" id="feedback-name" type="text" placeholder="Введите Ваше Имя" pattern="^[А-Яа-яЁё\s]+$" required="">
             <label class="visually-hidden" for="feedback-phone">Ваш номер телефона</label>
-            <input class="page-header__form-input" id="feedback-phone" type="tel" placeholder="Введите Ваш номер телефона">
+            <input class="page-header__form-input page-header__phone-input" id="feedback-phone" type="tel" placeholder="Введите Ваш номер телефона" pattern="[\+][7][0-9]{10}" required="">
             <button class="page-header__form-button" type="submit">Подобрать велосипед мечты</button>
           </form>
         </div>
