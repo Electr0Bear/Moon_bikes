@@ -20,11 +20,8 @@ const checkNameInput = () => {
   });
 
   nameInput.addEventListener('focusout', () => {
-    nameInput.classList.remove('page-header__form-input--invalid');
-    if (phoneInput.value.length !==0) {
-      setInputValidity(phoneInput);
-    }
-  })
+    setInputValidity(phoneInput);
+  });
 }
 
 const checkPhoneInput = () => {
@@ -32,33 +29,32 @@ const checkPhoneInput = () => {
     if (!phoneInput.value) {
       phoneInput.value = "+7";
     }
-  })
+  });
 
   phoneInput.addEventListener('focusout', () => {
-    console.log(phoneInput.checkValidity());
-
-    // if (phoneInput.value.length <= 2) {
-    //   phoneInput.value = "";
-    // } else if (phoneInput.value.length !==0 && !phoneInput.checkValidity()) {
-    //   phoneInput.setCustomValidity('Введите 10 цифр номера телефона');
-    //   setInputValidity(phoneInput);
-    // }
-
-
-
-  })
+    phoneInput.setCustomValidity('');
+    if (phoneInput.value.length <= 2) {
+      phoneInput.value = "";
+    } else if (phoneInput.value.length > 2 && !phoneInput.checkValidity()) {
+      phoneInput.setCustomValidity('Введите 10 цифр номера телефона');
+    }
+  });
 }
 
-const onFormSubmit = () => {
+const checkFormValidity = () => {
+
+  checkNameInput();
+  checkPhoneInput();
 
   formSubmitBtn.addEventListener('click', () => {
     setInputValidity(nameInput);
     setInputValidity(phoneInput);
-  })
+  });
 
   form.addEventListener('submit', evt => {
     evt.preventDefault();
-  })
+    console.log('форма отправлена')
+  });
 }
 
-export {onFormSubmit, checkNameInput, checkPhoneInput}
+export {checkFormValidity}
