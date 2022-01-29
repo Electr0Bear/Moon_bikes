@@ -107,17 +107,17 @@
   margin-bottom: 13px;
   border-radius: 10px;
 
-  & img {
-    position: inherit;
-  }
-
   @media (max-width: $tabletMax) {
     margin-bottom: 15px;
+  }
+}
 
-    & img {
-      width: 270px;
-      height: 300px;
-    }
+.bike-types__photo img {
+  position: inherit;
+
+  @media (max-width: $tabletMax) {
+    width: 270px;
+    height: 300px;
   }
 }
 

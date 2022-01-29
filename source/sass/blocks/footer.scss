@@ -25,14 +25,14 @@
   line-height: 22px;
   color: $blackOpacue05;
 
-  & svg {
-    margin-right: 15px;
-    fill: none;
-  }
-
   @media (max-width: $mobileMax) {
     margin-bottom: 22px;
   }
+}
+
+.footer__contact svg {
+  margin-right: 15px;
+  fill: none;
 }
 
 .footer__contact-email {
