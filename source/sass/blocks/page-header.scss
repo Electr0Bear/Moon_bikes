@@ -147,7 +147,7 @@
   }
 }
 
-.page-header__form-input {
+.page-header__form input {
   margin-bottom: 20px;
   padding: 13px 30px 9px 30px;
   width: 100%;
@@ -175,7 +175,7 @@
   }
 }
 
-.page-header__form-input--invalid {
+.page-header__form input.page-header__form-input--invalid {
   border: 1px solid $red;
 }
 
