@@ -92,11 +92,19 @@
 
   &:hover,
   &:focus {
-    filter: grayscale(0.5);
+    background-color: $dark3;
+    outline: 2px solid $teal;
+
+    &::before {
+      border-bottom: 12px solid $teal;
+    }
   }
 
   &:active {
-    filter: grayscale(0.8);
+    outline: 2px solid $tealOpacue05;
+    &::before {
+      border-bottom: 12px solid $tealOpacue03;
+    }
   }
 
   @media (max-width: $tabletMax) {

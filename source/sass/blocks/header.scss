@@ -188,6 +188,15 @@
       top: calc(50% + 1px);
     }
   }
+
+  &:hover,
+  &:focus {
+    color: $teal;
+  }
+
+  &:active {
+    color: $tealOpacue05;
+  }
 }
 
 .header__nav-button {

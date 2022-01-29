@@ -28,6 +28,15 @@
   @media (max-width: $mobileMax) {
     margin-bottom: 22px;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .footer__contact svg {

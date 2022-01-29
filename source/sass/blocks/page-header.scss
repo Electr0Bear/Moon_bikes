@@ -173,6 +173,10 @@
     margin-bottom: 20px;
     padding: 12px 21px 10px 21px;
   }
+
+  &:focus {
+    border: 1px solid $teal;
+  }
 }
 
 .page-header__form input.page-header__form-input--invalid {
@@ -189,4 +193,17 @@
   border: none;
   border-radius: 6px;
   outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $dark;
+    outline: 1px solid $teal;
+    color: $teal;
+  }
+
+  &:active {
+    outline: 1px solid $tealOpacue05;
+    color: $tealOpacue03;
+  }
 }
