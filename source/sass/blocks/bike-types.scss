@@ -114,6 +114,7 @@
 
 .bike-types__photo img {
   position: inherit;
+  background-color: $grey;
 
   @media (max-width: $tabletMax) {
     width: 270px;

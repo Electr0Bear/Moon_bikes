@@ -55,7 +55,14 @@
   width: min-content;
 }
 
+.bike-video__video {
+  display: block;
+}
+
 .bike-video__video img {
+  display: block;
+  background-color: $dark2;
+
   @media (max-width: $tabletMax) {
     width: 503px;
     height: 282px;

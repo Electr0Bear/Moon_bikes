@@ -1,9 +1,9 @@
 .map {
-  padding: 145px 0 10px 0;
+  padding: 150px 0 15px 0;
   box-sizing: border-box;
 
   @media (max-width: $tabletMax) {
-    padding-top: 65px;
+    padding-top: 70px;
   }
 }
 
@@ -60,6 +60,9 @@
 }
 
 .map__picture img {
+  display: block;
+  background-color: $grey;
+
   @media (max-width: $tabletMax) {
     width: 698px;
     height: 545px;
