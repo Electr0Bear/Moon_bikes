@@ -28,7 +28,7 @@
         </li>
       </ul>
     </nav>
-    <button class="header__nav-button"></button>
+    <button class="header__nav-button"><span class="visually-hidden">Меню</span></button>
   </header>
 
   <main class="body__main main">
@@ -137,10 +137,10 @@
               srcset="img/video-preview-mobile@1x.png 1x, img/video-preview-mobile@2x.png 2x">
             <source media="(max-width: 1023px)"
               srcset="img/video-preview-tablet@1x.png 1x, img/video-preview-tablet@2x.png 2x">
-            <img src="img/video-preview@1x.png" srcset="img/video-preview@2x.png 2x"
+            <img src="img/video-preview@1x.png" srcset="img/video-preview@2x.png 2x" loading="lazy"
               alt="Познавательный видеоролик о велосипедах" width="929" height="522">
           </picture>
-          <button class="bike-video__button"><span class="visually-hidden">Играть</span></button>
+          <button class="bike-video__button"><span class="visually-hidden">Смотреть видео</span></button>
         </div>
       </div>
     </section>
@@ -157,7 +157,7 @@
         <source type="image/webp" srcset="img/map@1x.webp 1x, img/map@2x.webp 2x">
         <source media="(max-width: 767px)" srcset="img/map-mobile@1x.png 1x, img/map-mobile@2x.png 2x">
         <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
-        <img src="img/map@1x.png" srcset="img/map@2x.png 2x" alt="Наш офис на карте" width="957" height="530">
+        <img src="img/map@1x.png" srcset="img/map@2x.png 2x" loading="lazy" alt="Наш офис на карте" width="957" height="530">
       </picture>
     </section>
 
