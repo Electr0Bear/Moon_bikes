@@ -63,6 +63,16 @@
   }
 }
 
+.header__nav--js-inactive .header__nav-list {
+  @media (max-width: $mobileMax) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-height: 320px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
 .header__nav--js-inactive .header__nav-item {
   @media (max-width: $tabletMax) {
     margin-bottom: 0;
@@ -123,7 +133,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     height:  calc(100vh - 100px);
-    max-height: 365px;
+    max-height: 360px;
     overflow-y: auto;
     overflow-x: hidden;
   }
