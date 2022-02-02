@@ -49,6 +49,11 @@ if (document.querySelector('.page-header__form')) {
     input.classList.toggle('page-header__form-input--invalid', !checkValidity);
   }
 
+  const clearInput = input => {
+    input.classList.remove('page-header__form-input--invalid');
+    input.value = '';
+  }
+
   if (document.querySelector('.page-header__name-input')) {
     const nameInput = document.querySelector('.page-header__name-input');
 
@@ -101,7 +106,10 @@ if (document.querySelector('.page-header__form')) {
 
     form.addEventListener('submit', evt => {
       evt.preventDefault();
-      console.log('форма отправлена')
+      console.log('форма отправлена');
+      formInputs.forEach(input => {
+        clearInput(input);
+      })
     });
   }
 
