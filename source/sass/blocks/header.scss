@@ -121,6 +121,11 @@
 .header__nav--opened .header__nav-list {
   @media (max-width: $tabletMax) {
     flex-direction: column;
+    flex-wrap: nowrap;
+    height:  calc(100vh - 100px);
+    max-height: 365px;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 }
 
