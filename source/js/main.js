@@ -110,7 +110,7 @@ if (document.querySelector('.page-header__form')) {
       formInputs.forEach(input => {
         clearInput(input);
       });
-      console.log('форма отправлена');
+      console.log('Форма отправлена');
     });
   }
 
