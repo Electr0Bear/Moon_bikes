@@ -52,6 +52,7 @@ if (document.querySelector('.page-header__form')) {
   const clearInput = input => {
     input.classList.remove('page-header__form-input--invalid');
     input.value = '';
+    console.log('Поле ввода очищено');
   }
 
   if (document.querySelector('.page-header__name-input')) {
