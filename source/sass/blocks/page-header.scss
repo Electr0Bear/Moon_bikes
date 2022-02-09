@@ -2,8 +2,8 @@
   box-sizing: border-box;
   background-color: $dark2;
   background-image: url("../img/background-bike@1x.png");
-  background-position: center 0;
-  background-size: 1440px 825px;
+  background-position: center center;
+  background-size: 100vw auto;
   background-repeat: no-repeat;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -11,23 +11,8 @@
   }
 
   @media (max-width: $tabletMax) {
-    background-image: url("../../img/background-bike-tablet@1x.png");
-    background-size: 767px 340px;
-  }
-
-  @media (max-width: $tabletMax) and (min-resolution: 144dpi),
-    (max-width: $tabletMax) and (min-resolution: 1.5dppx) {
-    background-image: url("../../img/background-bike-tablet@2x.png");
-  }
-
-  @media (max-width: $mobileMax) {
-    background-image: url("../../img/background-bike-mobile@1x.png");
-    background-size: 319px 390px;
-  }
-
-  @media (max-width: $mobileMax) and (min-resolution: 144dpi),
-    (max-width: $mobileMax) and (min-resolution: 1.5dppx) {
-    background-image: url("../../img/background-bike-mobile@2x.png");
+    background-image: none;
+    background-color: $white;
   }
 }
 
@@ -42,6 +27,31 @@
     max-width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
+  }
+}
+
+.page-header__about {
+  @media (max-width: $tabletMax) {
+    background-color: $dark2;
+    background-image: url("../../img/background-bike-tablet@1x.png");
+    background-position: center center;
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: $tabletMax) and (min-resolution: 144dpi),
+    (max-width: $tabletMax) and (min-resolution: 1.5dppx) {
+    background-image: url("../../img/background-bike-tablet@2x.png");
+  }
+
+  @media (max-width: $mobileMax) {
+    background-image: url("../../img/background-bike-mobile@1x.png");
+    // background-size: 319px 390px;
+  }
+
+  @media (max-width: $mobileMax) and (min-resolution: 144dpi),
+    (max-width: $mobileMax) and (min-resolution: 1.5dppx) {
+    background-image: url("../../img/background-bike-mobile@2x.png");
   }
 }
 
