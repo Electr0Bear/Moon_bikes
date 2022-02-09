@@ -1,23 +1,9 @@
 .page-header {
   box-sizing: border-box;
-  background-color: $dark2;
-  background-image: url("../img/background-bike@1x.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/background-bike@2x.png");
-  }
-
-  @media (max-width: $tabletMax) {
-    background-image: none;
-    background-color: $white;
-  }
+  position: relative;
 }
 
 .page-header__wrapper {
-  padding: 318px 0 240px 0;
   max-width: 880px;
   display: grid;
   grid-template-columns: 393px 1fr 326px;
@@ -31,27 +17,57 @@
 }
 
 .page-header__about {
-  @media (max-width: $tabletMax) {
+  padding: 318px 0 240px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
     background-color: $dark2;
-    background-image: url("../../img/background-bike-tablet@1x.png");
+    background-image: url("../img/background-bike@1x.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    &::before {
+      background-image: url("../img/background-bike@2x.png");
+    }
+  }
+
+  @media (max-width: $tabletMax) {
+    padding: 25px 0 80px 0;
+    position: relative;
+
+    &::before {
+      background-image: url("../img/background-bike-tablet@1x.png");
+    }
   }
 
   @media (max-width: $tabletMax) and (min-resolution: 144dpi),
     (max-width: $tabletMax) and (min-resolution: 1.5dppx) {
-    background-image: url("../../img/background-bike-tablet@2x.png");
+    &::before {
+      background-image: url("../img/background-bike-tablet@2x.png");
+    }
   }
 
   @media (max-width: $mobileMax) {
-    background-image: url("../../img/background-bike-mobile@1x.png");
-    // background-size: 319px 390px;
+    &::before {
+      background-image: url("../img/background-bike-mobile@1x.png");
+    }
   }
 
   @media (max-width: $mobileMax) and (min-resolution: 144dpi),
     (max-width: $mobileMax) and (min-resolution: 1.5dppx) {
-    background-image: url("../../img/background-bike-mobile@2x.png");
+    &::before {
+      background-image: url("../img/background-bike-mobile@2x.png");
+    }
   }
 }
 
@@ -59,11 +75,11 @@
   margin-bottom: 25px;
 
   @media (max-width: $tabletMax) {
-    margin: 25px 0 83px 23px;
+    margin: 0 0 83px 23px;
   }
 
   @media (max-width: $mobileMax) {
-    margin: 25px 0 69px 18px;
+    margin: 0 0 69px 18px;
   }
 }
 
@@ -97,7 +113,7 @@
   color: $whiteOpacue08;
 
   @media (max-width: $tabletMax) {
-    margin: 0 auto 80px auto;
+    margin: 0 auto;
     max-width: 435px;
     font-size: 18px;
     line-height: 32px;
@@ -105,16 +121,16 @@
   }
 
   @media (max-width: $mobileMax) {
-    margin-bottom: 70px;
     max-width: 288px;
   }
 }
 
 .page-header__form-wrapper {
+  padding: 318px 0 240px 0;
   grid-column: 3 / 4;
 
   @media (max-width: $tabletMax) {
-    padding-top: 66px;
+    padding: 66px 0 0 0;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     background-color: $white;
