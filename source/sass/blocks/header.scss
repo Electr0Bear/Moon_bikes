@@ -149,7 +149,7 @@
 .header__nav--opened .header__nav-link {
   @media (max-width: $tabletMax) {
     padding: 15px 16px;
-    width: 320px;
+    width: 100vw;
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0.02em;
