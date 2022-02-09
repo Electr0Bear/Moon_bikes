@@ -3,7 +3,7 @@
   background-color: $dark2;
   background-image: url("../img/background-bike@1x.png");
   background-position: center center;
-  background-size: 100vw auto;
+  background-size: cover;
   background-repeat: no-repeat;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -35,7 +35,7 @@
     background-color: $dark2;
     background-image: url("../../img/background-bike-tablet@1x.png");
     background-position: center center;
-    background-size: 100vw auto;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
