@@ -2,15 +2,13 @@
   position: relative;
   box-sizing: border-box;
   background-color: transparent;
-
-  @media (max-width: $tabletMax) {
-  }
 }
 
 .header__nav {
-  position: relative;
-  max-width: 880px;
-  margin-bottom: -62px;
+  position: absolute;
+  width: 880px;
+  top: 0;
+  left: calc(50% - 420px);
   padding: 21px 19px 9px 19px;
 
   &::before {
@@ -27,7 +25,6 @@
   @media (max-width: $tabletMax) {
     padding: 0;
     display: none;
-    max-width: fit-content;
 
     &::before {
       display: none;
@@ -37,10 +34,10 @@
 
 .header__nav--js-inactive {
   @media (max-width: $tabletMax) {
-    margin-bottom: -50px;
     padding: 9px 19px 9px 19px;
     display: block;
-    max-width: 500px;
+    width: 500px;
+    left: calc(50% - 250px);
 
     &::before {
       display: initial;
@@ -52,7 +49,7 @@
     padding: 20px 0 8px 0;
     position: relative;
     top: 0;
-    right: 0;
+    left: 0;
     background-color: $white;
   }
 }
@@ -122,8 +119,9 @@
     padding: 100px 0 108px 0;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     display: block;
+    width: 100vw;
     background-color: $white;
   }
 }
