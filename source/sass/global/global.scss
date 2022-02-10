@@ -9,6 +9,10 @@
   font-size: 16px;
   color: $black;
   background-color: $white;
+
+  &--disabled-scroll {
+    overflow-y: hidden;
+  }
 }
 
 .container {

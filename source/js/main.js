@@ -1,6 +1,7 @@
 'use strict';
 
 if (document.querySelector('.header__nav')) {
+  const pageBody = document.querySelector('.body');
   const header = document.querySelector('.header__nav');
   const headerBtn = document.querySelector('.header__nav-button')
   const links = header.querySelectorAll('a[href^="#"]');
@@ -15,8 +16,10 @@ if (document.querySelector('.header__nav')) {
       evt.preventDefault();
       const checkClass = header.classList.contains('header__nav--opened');
       header.classList.toggle('header__nav--opened', !checkClass);
-    })
+      pageBody.classList.toggle('body--disabled-scroll', !checkClass);
+    });
   }
+
 
   const smoothScrollHandler = () => {
     links.forEach(link => {
