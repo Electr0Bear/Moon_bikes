@@ -141,14 +141,15 @@
   @media (max-width: $tabletMax) {
     margin: 0 auto;
     padding: 0 222px;
-    max-width: 768px;
+    min-width: 768px;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
 
   @media (max-width: $mobileMax) {
     padding: 0 16px;
-    max-width: 400px;
+    min-width: 320px;
+    max-width: 460px;
   }
 }
 
