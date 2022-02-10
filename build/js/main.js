@@ -62,9 +62,6 @@ if (document.querySelector('.page-header__form')) {
       nameInput.addEventListener('input', () => {
         nameInput.setCustomValidity('');
         setInputValidity(nameInput);
-        if (nameInput.value && !nameInput.checkValidity()) {
-          nameInput.setCustomValidity('Поле должно содержать только буквы русского алфавита');
-        }
       });
 
       nameInput.addEventListener('focusout', () => {
@@ -79,19 +76,13 @@ if (document.querySelector('.page-header__form')) {
     const phoneInput = document.querySelector('.page-header__phone-input');
 
     const checkPhoneInput = () => {
-      phoneInput.addEventListener('focusin', () => {
-        if (!phoneInput.value) {
-          phoneInput.value = "+7";
-        }
+      phoneInput.addEventListener('input', () => {
+        phoneInput.setCustomValidity('');
+        phoneInput.classList.remove('page-header__form-input--invalid');
       });
 
       phoneInput.addEventListener('focusout', () => {
-        phoneInput.setCustomValidity('');
-        if (phoneInput.value.length <= 2) {
-          phoneInput.value = "";
-        } else if (phoneInput.value.length > 2 && !phoneInput.checkValidity()) {
-          phoneInput.setCustomValidity('Введите 10 цифр номера телефона');
-        }
+        setInputValidity(phoneInput);
       });
     }
 
