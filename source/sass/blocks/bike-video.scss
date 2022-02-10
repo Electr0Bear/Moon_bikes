@@ -9,7 +9,7 @@
   }
 
   @media (max-width: $mobileMax) {
-    padding: 84px 16px 0 16px;
+    padding-top: 84px;
     background: linear-gradient(to bottom, $dark2 88%, $white 88%);
   }
 }
@@ -52,7 +52,17 @@
   margin: 0 auto;
   position: relative;
   display: block;
-  width: min-content;
+  max-width: 929px;
+
+  @media (max-width: $tabletMax) {
+    padding: 0 132px;
+    max-width: $tabletMax;
+  }
+
+  @media (max-width: $mobileMax) {
+    padding: 0 15px;
+    max-width: $mobileMax;
+  }
 }
 
 .bike-video__video {
@@ -64,13 +74,8 @@
   background-color: $dark2;
 
   @media (max-width: $tabletMax) {
-    width: 503px;
-    height: 282px;
-  }
-
-  @media (max-width: $mobileMax) {
-    width: 288px;
-    height: 162px;
+    max-width: 100%;
+    height: auto;
   }
 }
 
