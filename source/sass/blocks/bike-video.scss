@@ -1,11 +1,11 @@
 .bike-video {
   padding-top: 120px;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, $dark2 87%, $white 87%);
+  background: linear-gradient(to bottom, $dark2 88%, $white 88%);
 
   @media (max-width: $tabletMax) {
     padding-top: 70px;
-    background: linear-gradient(to bottom, $dark2 82%, $white 82%);
+    background: linear-gradient(to bottom, $dark2 83%, $white 83%);
   }
 
   @media (max-width: $mobileMax) {
@@ -45,6 +45,7 @@
 
   @media (max-width: $mobileMax) {
     margin-bottom: 53px;
+    padding: 0 16px;
   }
 }
 

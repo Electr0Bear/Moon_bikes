@@ -5,14 +5,15 @@
 
 .bike-types__wrapper {
   margin: 0 auto;
+  max-width: 1330px;
   padding: 155px 75px 100px 75px;
 
   @media (max-width: $tabletMax) {
-    padding: 50px 89px 70px 89px;
+    padding: 50px 65px 20px 65px;
   }
 
   @media (max-width: $mobileMax) {
-    padding: 51px 25px 14px 25px;
+    padding: 51px 10px 14px 10px;
   }
 }
 
@@ -41,6 +42,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
 
+
   @media (max-width: $mobileMax) {
     flex-direction: column;
     align-items: center;
@@ -48,9 +50,13 @@
 }
 
 .bike-types__item {
-  margin-bottom: 50px;
+  margin: 0 15px 50px 15px;
   position: relative;
   width: min-content;
+
+  @media (max-width: $tabletMax) {
+    margin: 0 10px 50px 10px;
+  }
 }
 
 .bike-types__item span {
@@ -87,10 +93,6 @@
 }
 
 .bike-types__item--03 {
-
-  @media (max-width: $tabletMax) {
-    margin: 0;
-  }
 
   @media (max-width: $mobileMax) {
     margin-bottom: 40px;

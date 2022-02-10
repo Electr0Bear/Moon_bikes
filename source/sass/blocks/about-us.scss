@@ -3,7 +3,7 @@
   box-sizing: border-box;
 
   @media (max-width: $tabletMax) {
-    padding: 72px 106px 27px 106px;
+    padding: 72px 90px 27px 90px;
   }
 
   @media (max-width: $mobileMax) {
@@ -36,7 +36,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  max-width: 1170px;
+  max-width: 1200px;
   counter-reset: myCounter;
 
   @media (max-width: $tabletMax) {
@@ -77,8 +77,8 @@
   }
 
   @media (max-width: $mobileMax) {
-    margin-bottom: 35px;
-    padding-top: 57px;
+    margin-bottom: 45px;
+    padding-top: 47px;
     font-size: 18px;
     line-height: 34px;
   }
