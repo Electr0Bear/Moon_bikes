@@ -1,5 +1,5 @@
 .about-us {
-  padding: 150px 25px 148px 25px;
+  padding: 150px 25px 108px 25px;
   box-sizing: border-box;
 
   @media (max-width: $tabletMax) {
@@ -34,12 +34,12 @@
 .about-us__feature-list {
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   max-width: 1170px;
   counter-reset: myCounter;
 
   @media (max-width: $tabletMax) {
-    flex-wrap: wrap;
     max-width: 600px;
   }
 
@@ -49,6 +49,7 @@
 }
 
 .about-us__feature-item {
+  margin-bottom: 40px;
   padding-top: 50px;
   position: relative;
   counter-increment: myCounter;
@@ -72,7 +73,6 @@
   }
 
   @media (max-width: $tabletMax) {
-    margin-bottom: 40px;
     padding-top: 55px;
   }
 
